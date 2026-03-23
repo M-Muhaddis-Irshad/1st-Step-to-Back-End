@@ -8,8 +8,6 @@ dotenv.config();
 
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@practice-cluster.clujnmz.mongodb.net/?appName=${process.env.DB_NAME}`;
 
-// const url = `mongodb+srv://Muhaddis:muhaddisDatabase123@practice-cluster.clujnmz.mongodb.net/?appName=Practice-Cluster`;
-
 mongoose.connect(url);
 
 export default mongoose;
