@@ -4,12 +4,12 @@ import postsRouter from './posts/index.js';
 
 const router = express.Router();
 
+
+// Middlewares_________________________________________________
 // Auth EndPoint(API)_________________________________
 router.use('/user', userRouter);
-
 // Posts EndPoint(API)_________________________________
 router.use('/posts', postsRouter);
-
 router.use('/', (req, res) => {
     console.log(`Router Request`);
     res.send({status: 200, message: `Router request`});
